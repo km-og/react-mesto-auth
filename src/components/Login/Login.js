@@ -1,12 +1,10 @@
 import { useState } from "react";
 import AuthForm from "../AuthForm/AuthForm";
 import Header from "../Header/Header";
-import * as auth from "../Auth/Auth";
-import { useNavigate } from "react-router-dom";
 
 // компонент авторизации пользователя с необходимыми стейт-переменными.
 
-function Login({ loggedIn, onSubmitForm }) {
+function Login({ loggedIn, onSubmitForm, handleSubmitLogin }) {
   const [formValue, setFormValue] = useState({
     email: "",
     password: "",
@@ -17,25 +15,13 @@ function Login({ loggedIn, onSubmitForm }) {
     setFormValue({ ...formValue, [name]: value });
   };
 
-  const navigate = useNavigate();
-
   function handleSubmit(e) {
     e.preventDefault();
 
     if (!formValue.email || !formValue.password) {
       return;
     }
-    auth
-      .authorize(email, password)
-      .then((data) => {
-        console.log(data);
-        if (data.token) {
-          setFormValue({ email: "", password: "" });
-          onSubmitForm();
-          navigate("/");
-        }
-      })
-      .catch((err) => console.log(err));
+    handleSubmitLogin({ email, password, setFormValue });
   }
 
   const { email, password } = formValue;

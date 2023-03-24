@@ -1,9 +1,9 @@
-function renderLoading(popup, initialValue, isLoading) {
-  const saveBtn = popup.querySelector(".popup__save-button");
+function renderLoading(initialValue, isLoading, textSaveBtn) {
+  // const saveBtn = popup.querySelector(".popup__save-button");
   if (isLoading) {
-    saveBtn.textContent = "Сохранение...";
+    textSaveBtn = "Сохранение...";
   } else {
-    saveBtn.textContent = initialValue;
+    textSaveBtn = initialValue;
   }
 }
 

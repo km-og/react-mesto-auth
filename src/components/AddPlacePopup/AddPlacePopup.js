@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+// import { useForm } from "../hooks/useForm";
+// import { useFormAndValidation } from "../hooks/useFormAndValidation";
 import PopupWithForm from "../PopupWithForm/PopupWithForm";
 
 export function AddPlacePopup({ isOpen, onClose, onUpdateCard }) {
@@ -14,11 +16,15 @@ export function AddPlacePopup({ isOpen, onClose, onUpdateCard }) {
   function handleAddCardLink(evt) {
     setCardLink(evt.target.value);
   }
+  // const cardName = useForm();
+  // const cardLink = useForm();
 
   useEffect(() => {
     setCardName("");
     setCardLink("");
   }, [isOpen]);
+  // const { values, handleChange, errors, isValid, setValues, resetForm } =
+  // useFormAndValidation();
 
   function handleSubmit(evt) {
     evt.preventDefault();
@@ -49,6 +55,7 @@ export function AddPlacePopup({ isOpen, onClose, onUpdateCard }) {
             minLength="2"
             maxLength="30"
             value={cardName}
+            // onChange={(e) => useForm.handleChange(e)}
             onChange={handleAddCardName}
           />
           <span className="popup__error title-input-error"></span>
@@ -63,6 +70,7 @@ export function AddPlacePopup({ isOpen, onClose, onUpdateCard }) {
             required
             value={cardLink}
             onChange={handleAddCardLink}
+            // onChange={(e) => useForm.handleChange(e)}
           />
           <span className="popup__error link-input-error"></span>
         </div>
