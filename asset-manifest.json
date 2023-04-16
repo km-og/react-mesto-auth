@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-mesto-auth/static/css/main.783dd074.css",
+    "main.js": "/react-mesto-auth/static/js/main.515181ae.js",
+    "static/media/Inter-Medium.woff?v=3.19": "/react-mesto-auth/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Black.woff?v=3.19": "/react-mesto-auth/static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff?v=3.19": "/react-mesto-auth/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Medium.woff2?v=3.19": "/react-mesto-auth/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-Black.woff2?v=3.19": "/react-mesto-auth/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
+    "static/media/Inter-Regular.woff2?v=3.19": "/react-mesto-auth/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "static/media/header-logo.svg": "/react-mesto-auth/static/media/header-logo.03b78ada3425e9132ff3db7ea8f4a6f6.svg",
+    "static/media/element-like-button.svg": "/react-mesto-auth/static/media/element-like-button.87ed371465c7a6a1cd01.svg",
+    "static/media/element-delete-button.svg": "/react-mesto-auth/static/media/element-delete-button.cbc09a894bdd4c956365.svg",
+    "index.html": "/react-mesto-auth/index.html",
+    "static/media/element-like-button-active.svg": "/react-mesto-auth/static/media/element-like-button-active.fe17a515669479b1e649.svg",
+    "static/media/profile-edit-button.svg": "/react-mesto-auth/static/media/profile-edit-button.6c7bf05444b9793fdf6e.svg",
+    "static/media/popup-close-icon.svg": "/react-mesto-auth/static/media/popup-close-icon.2ceb783afbab75916ddc.svg",
+    "static/media/profile-add-button.svg": "/react-mesto-auth/static/media/profile-add-button.bed8c136e13907f5eefb.svg",
+    "main.783dd074.css.map": "/react-mesto-auth/static/css/main.783dd074.css.map",
+    "main.515181ae.js.map": "/react-mesto-auth/static/js/main.515181ae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.783dd074.css",
+    "static/js/main.515181ae.js"
+  ]
+}
